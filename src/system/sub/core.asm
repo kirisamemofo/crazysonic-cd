@@ -80,7 +80,7 @@ SystemMain:
 
 	lea	PRG_END-$8000,a0				; Source buffer
 	lea	WORD_START_2M,a1				; Destination buffer
-	move.w	#filesize("build/files/MAIN.M68")/16-1,d0	; Size of program
+	move.w	#filesize("out/files/MAIN.M68")/16-1,d0		; Size of program
 
 .Copy:
 	move.l	(a0)+,(a1)+					; Copy program 

@@ -42,7 +42,7 @@ IMAGE_END		EQU	IMAGE_START+IMAGE_SIZE		; Word RAM image area end (1M/1M)
 
 ; Z80 RAM
 Z80_START		EQU	$A00000				; Z80 RAM area start
-Z80_SIZE		EQU	$A00000				; Z80 RAM area size
+Z80_SIZE		EQU	$2000				; Z80 RAM area size
 Z80_END			EQU	Z80_START+Z80_SIZE		; Z80 RAM area end
 
 ; YM2612 registers
