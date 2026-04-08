@@ -54,7 +54,7 @@ LoadProgram:
 	obj	RAM_START+$F700
 	lea	WORD_START,a0					; Source buffer
 	lea	RAM_START,a1					; Destination buffer
-	move.w	#filesize("build/files/MAIN.M68")/16-1,d0	; Size of program
+	move.w	#filesize("out/files/MAIN.M68")/16-1,d0		; Size of program
 
 .Copy:
 	move.l	(a0)+,(a1)+					; Copy program 
